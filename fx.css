@@ -1,0 +1,48 @@
+/* --- ปรับแต่งหน้าตา Discord ให้สวยงามและโค้งมนขึ้น --- */
+
+/* ทำให้หน้าต่างหลักมีความโปร่งใสและเบลอพื้นหลัง */
+.appMount_fae9cb, .background_-6i_pc, .layer_QU7bvW {
+    background-color: transparent !important;
+}
+
+/* ปรับความโค้งมนของหน้าต่างหลักและแถบเมนู */
+.sidebar_c48ade {
+    border-radius: 12px 0 0 12px;
+    background: rgba(30, 31, 34, 0.75) !important;
+    backdrop-filter: blur(12px);
+}
+
+.chat_a7d72e {
+    background: rgba(43, 45, 49, 0.65) !important;
+    backdrop-filter: blur(12px);
+}
+
+/* ปรับแต่งกล่องข้อความแชทให้ดูมนและทันสมัย */
+.scrollableContainer_bdf0b7 {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.scrollableContainer_bdf0b7:focus-within {
+    border-color: var(--brand-experiment);
+    box-shadow: 0 0 10px rgba(88, 101, 242, 0.3);
+}
+
+/* ซ่อนปุ่มที่ไม่จำเป็นเพื่อความสะอาดตา (เช่น ปุ่มกิฟต์หรือสติกเกอร์บางส่วนถ้าต้องการ) */
+/* .button_afdf72 { filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); } */
+
+/* ปรับแต่ง Scrollbar ให้บางและสวยงามขึ้น */
+::-webkit-scrollbar {
+    width: 6px !important;
+    height: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4) !important;
+}
